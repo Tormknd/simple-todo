@@ -1,0 +1,90 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "settings": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "darkMode": "Dark Mode",
+    "notifications": "Notifications"
+  },
+  "tabs": {
+    "home": "Home",
+    "lists": "Lists",
+    "team": "Team",
+    "settings": "Settings"
+  },
+  "tasks": {
+    "title": "Tasks",
+    "newTask": "New Task",
+    "editTask": "Edit Task",
+    "deleteTask": "Delete Task",
+    "taskName": "Task Name",
+    "dueDate": "Due Date",
+    "priority": "Priority",
+    "description": "Description",
+    "assignTo": "Assign to",
+    "status": {
+      "todo": "To Do",
+      "inProgress": "In Progress",
+      "done": "Done"
+    },
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    }
+  },
+  "lists": {
+    "title": "Lists",
+    "newList": "New List",
+    "editList": "Edit List",
+    "deleteList": "Delete List",
+    "listName": "List Name",
+    "noLists": "No lists yet",
+    "createList": "Create your first list"
+  },
+  "team": {
+    "title": "Team",
+    "members": "Team Members",
+    "invite": "Invite Member",
+    "remove": "Remove Member",
+    "role": {
+      "admin": "Admin",
+      "member": "Member",
+      "viewer": "Viewer"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "account": "Account",
+    "notifications": "Notifications",
+    "appearance": "Appearance",
+    "language": "Language",
+    "about": "About",
+    "version": "Version",
+    "logout": "Log Out",
+    "languages": {
+      "en": "English",
+      "fr": "French"
+    }
+  },
+  "auth": {
+    "login": "Log In",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "confirmPassword": "Confirm Password",
+    "name": "Name",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?"
+  }
+} 

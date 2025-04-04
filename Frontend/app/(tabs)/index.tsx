@@ -2,8 +2,11 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-nati
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Plus, Search } from 'lucide-react-native';
 import { router } from 'expo-router';
+import { useTranslation } from 'react-i18next';
 
 export default function HomeScreen() {
+  const { t } = useTranslation();
+  
   const handleAddTask = () => {
     router.push('/task/new');
   };
@@ -11,7 +14,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>My Tasks</Text>
+        <Text style={styles.title}>{t('tasks.title')}</Text>
         <TouchableOpacity style={styles.addButton} onPress={handleAddTask}>
           <Plus size={24} color="#ffffff" />
         </TouchableOpacity>
@@ -20,12 +23,12 @@ export default function HomeScreen() {
       <View style={styles.searchContainer}>
         <View style={styles.searchBox}>
           <Search size={20} color="#64748b" />
-          <Text style={styles.searchPlaceholder}>Search tasks...</Text>
+          <Text style={styles.searchPlaceholder}>{t('common.search')}</Text>
         </View>
       </View>
 
       <ScrollView style={styles.content}>
-        <Text style={styles.sectionTitle}>Today</Text>
+        <Text style={styles.sectionTitle}>{t('tasks.title')}</Text>
         {/* Task list will go here */}
       </ScrollView>
     </SafeAreaView>

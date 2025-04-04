@@ -1,0 +1,90 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "add": "Ajouter",
+    "search": "Rechercher",
+    "settings": "Paramètres",
+    "language": "Langue",
+    "theme": "Thème",
+    "darkMode": "Mode Sombre",
+    "notifications": "Notifications"
+  },
+  "tabs": {
+    "home": "Accueil",
+    "lists": "Listes",
+    "team": "Équipe",
+    "settings": "Paramètres"
+  },
+  "tasks": {
+    "title": "Tâches",
+    "newTask": "Nouvelle Tâche",
+    "editTask": "Modifier la Tâche",
+    "deleteTask": "Supprimer la Tâche",
+    "taskName": "Nom de la Tâche",
+    "dueDate": "Date d'échéance",
+    "priority": "Priorité",
+    "description": "Description",
+    "assignTo": "Assigner à",
+    "status": {
+      "todo": "À Faire",
+      "inProgress": "En Cours",
+      "done": "Terminé"
+    },
+    "priority": {
+      "low": "Basse",
+      "medium": "Moyenne",
+      "high": "Haute"
+    }
+  },
+  "lists": {
+    "title": "Listes",
+    "newList": "Nouvelle Liste",
+    "editList": "Modifier la Liste",
+    "deleteList": "Supprimer la Liste",
+    "listName": "Nom de la Liste",
+    "noLists": "Aucune liste pour le moment",
+    "createList": "Créez votre première liste"
+  },
+  "team": {
+    "title": "Équipe",
+    "members": "Membres de l'Équipe",
+    "invite": "Inviter un Membre",
+    "remove": "Retirer un Membre",
+    "role": {
+      "admin": "Administrateur",
+      "member": "Membre",
+      "viewer": "Observateur"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "account": "Compte",
+    "notifications": "Notifications",
+    "appearance": "Apparence",
+    "language": "Langue",
+    "about": "À Propos",
+    "version": "Version",
+    "logout": "Déconnexion",
+    "languages": {
+      "en": "Anglais",
+      "fr": "Français"
+    }
+  },
+  "auth": {
+    "login": "Connexion",
+    "signup": "Inscription",
+    "email": "Email",
+    "password": "Mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "resetPassword": "Réinitialiser le mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "name": "Nom",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "dontHaveAccount": "Vous n'avez pas de compte ?"
+  }
+} 

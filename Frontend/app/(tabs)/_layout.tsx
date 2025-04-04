@@ -1,7 +1,10 @@
 import { Tabs } from 'expo-router';
 import { Chrome as Home, ListTodo, Settings, Users } from 'lucide-react-native';
+import { useTranslation } from 'react-i18next';
 
 export default function TabLayout() {
+  const { t } = useTranslation();
+
   return (
     <Tabs
       screenOptions={{
@@ -16,28 +19,28 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'My Tasks',
+          title: t('tabs.home'),
           tabBarIcon: ({ size, color }) => <Home size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="lists"
         options={{
-          title: 'Lists',
+          title: t('tabs.lists'),
           tabBarIcon: ({ size, color }) => <ListTodo size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="team"
         options={{
-          title: 'Team',
+          title: t('tabs.team'),
           tabBarIcon: ({ size, color }) => <Users size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="settings"
         options={{
-          title: 'Settings',
+          title: t('tabs.settings'),
           tabBarIcon: ({ size, color }) => <Settings size={size} color={color} />,
         }}
       />

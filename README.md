@@ -12,14 +12,16 @@ A modern, user-friendly todo application built with Expo and React Native, perfe
 - 🔄 Real-time updates
 - 📊 Task organization and categorization
 - 🔔 Task reminders and notifications
-- 🌙 Dark mode support
+- �� Dark mode support
+- 🌐 Multi-language support (English and French)
 
 ## Tech Stack
 
 - [Expo](https://expo.dev/)
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Supabase](https://supabase.com/) (Backend)
+- [i18next](https://www.i18next.com/) for internationalization
+- [MongoDB](https://www.mongodb.com/) (Backend - Coming Soon)
 
 ## Prerequisites
 
@@ -53,13 +55,27 @@ A modern, user-friendly todo application built with Expo and React Native, perfe
    - Press `w` for web browser
    - Scan QR code with Expo Go app for physical device
 
-## Environment Setup
+## Internationalization
 
-1. Create a `.env` file in the Frontend directory:
-   ```
-   EXPO_PUBLIC_SUPABASE_URL=your_supabase_url
-   EXPO_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-   ```
+The application supports multiple languages:
+
+- **English** (default)
+- **French**
+
+To change the language:
+1. Navigate to the Settings tab
+2. Select your preferred language from the language options
+3. The app will immediately update to display all text in the selected language
+
+The language preference is saved and will persist between app launches.
+
+## Backend Integration (Coming Soon)
+
+The application will be integrated with a MongoDB backend. The backend implementation is currently in development and will provide:
+- User authentication
+- Data persistence
+- Real-time updates
+- API endpoints for todo management
 
 ## Contributing
 
@@ -77,7 +93,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [Expo](https://expo.dev/) for the amazing development platform
 - [React Native](https://reactnative.dev/) for the cross-platform framework
-- [Supabase](https://supabase.com/) for the backend infrastructure
+- [i18next](https://www.i18next.com/) for the internationalization framework
+- [MongoDB](https://www.mongodb.com/) for the upcoming backend infrastructure
 
 ## Contact
 

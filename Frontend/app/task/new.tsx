@@ -5,8 +5,10 @@ import { router } from 'expo-router';
 import { Calendar, Clock, X } from 'lucide-react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { format } from 'date-fns';
+import { useTranslation } from 'react-i18next';
 
 export default function NewTaskScreen() {
+  const { t } = useTranslation();
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [dueDate, setDueDate] = useState(new Date());
@@ -21,7 +23,7 @@ export default function NewTaskScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>New Task</Text>
+        <Text style={styles.title}>{t('tasks.newTask')}</Text>
         <TouchableOpacity onPress={() => router.back()} style={styles.closeButton}>
           <X size={24} color="#64748b" />
         </TouchableOpacity>
@@ -29,23 +31,23 @@ export default function NewTaskScreen() {
       
       <ScrollView style={styles.content}>
         <View style={styles.inputGroup}>
-          <Text style={styles.label}>Title</Text>
+          <Text style={styles.label}>{t('tasks.taskName')}</Text>
           <TextInput
             style={styles.input}
             value={title}
             onChangeText={setTitle}
-            placeholder="Enter task title"
+            placeholder={t('tasks.taskName')}
             placeholderTextColor="#94a3b8"
           />
         </View>
 
         <View style={styles.inputGroup}>
-          <Text style={styles.label}>Description</Text>
+          <Text style={styles.label}>{t('tasks.description')}</Text>
           <TextInput
             style={[styles.input, styles.textArea]}
             value={description}
             onChangeText={setDescription}
-            placeholder="Enter task description"
+            placeholder={t('tasks.description')}
             placeholderTextColor="#94a3b8"
             multiline
             numberOfLines={4}
@@ -54,7 +56,7 @@ export default function NewTaskScreen() {
         </View>
 
         <View style={styles.inputGroup}>
-          <Text style={styles.label}>Due Date</Text>
+          <Text style={styles.label}>{t('tasks.dueDate')}</Text>
           <TouchableOpacity 
             style={styles.dateButton}
             onPress={() => setShowDatePicker(true)}
@@ -67,7 +69,7 @@ export default function NewTaskScreen() {
         </View>
 
         <View style={styles.inputGroup}>
-          <Text style={styles.label}>Due Time</Text>
+          <Text style={styles.label}>{t('tasks.dueDate')}</Text>
           <TouchableOpacity 
             style={styles.dateButton}
             onPress={() => setShowTimePicker(true)}
@@ -111,7 +113,7 @@ export default function NewTaskScreen() {
           style={styles.createButton}
           onPress={handleCreateTask}
         >
-          <Text style={styles.createButtonText}>Create Task</Text>
+          <Text style={styles.createButtonText}>{t('tasks.newTask')}</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
